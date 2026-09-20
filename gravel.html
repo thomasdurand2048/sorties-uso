@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22%20role=%22img%22%20aria-label=%22USO%20Cyclisme%22%3E%3Cdefs%3E%3CclipPath%20id=%22uso-c%22%3E%3Crect%20width=%22100%22%20height=%22100%22%20rx=%2222%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20clip-path=%22url(#uso-c)%22%3E%3Crect%20width=%22100%22%20height=%22100%22%20fill=%22#2E6B4A%22/%3E%3Crect%20y=%2272%22%20width=%22100%22%20height=%2228%22%20fill=%22#23282C%22/%3E%3Cg%20fill=%22#FFFFFF%22%20transform=%22translate(16.5,56)%22%3E%3Cpath%20transform=%22translate(0.0,0)%20scale(0.048,-0.048)%22%20d=%22M41%20199V688Q41%20693%2044.5%20696.5Q48%20700%2053%20700H170Q175%20700%20178.5%20696.5Q182%20693%20182%20688V185Q182%20153%20198.0%20133.0Q214%20113%20240%20113Q266%20113%20281.5%20133.0Q297%20153%20297%20185V688Q297%20693%20300.5%20696.5Q304%20700%20309%20700H426Q431%20700%20434.5%20696.5Q438%20693%20438%20688V199Q438%20105%20383.5%2048.5Q329%20-8%20240%20-8Q150%20-8%2095.5%2048.5Q41%20105%2041%20199Z%22/%3E%3Cpath%20transform=%22translate(22.99,0)%20scale(0.048,-0.048)%22%20d=%22M30%20175V204Q30%20209%2033.5%20212.5Q37%20216%2042%20216H157Q162%20216%20165.5%20212.5Q169%20209%20169%20204V182Q169%20151%20185.0%20132.0Q201%20113%20225%20113Q249%20113%20265.0%20131.0Q281%20149%20281%20178Q281%20208%20261.0%20229.5Q241%20251%20183%20293Q133%20329%20102.0%20357.0Q71%20385%2049.0%20426.0Q27%20467%2027%20521Q27%20606%2080.0%20657.0Q133%20708%20220%20708Q308%20708%20361.5%20655.0Q415%20602%20415%20516V492Q415%20487%20411.5%20483.5Q408%20480%20403%20480H288Q283%20480%20279.5%20483.5Q276%20487%20276%20492V519Q276%20550%20260.5%20568.5Q245%20587%20220%20587Q196%20587%20181.0%20569.5Q166%20552%20166%20521Q166%20491%20185.0%20468.0Q204%20445%20260%20404Q322%20358%20353.5%20329.5Q385%20301%20402.5%20266.5Q420%20232%20420%20184Q420%2096%20366.0%2044.0Q312%20-8%20224%20-8Q166%20-8%20122.0%2015.0Q78%2038%2054.0%2079.5Q30%20121%2030%20175Z%22/%3E%3Cpath%20transform=%22translate(44.3,0)%20scale(0.048,-0.048)%22%20d=%22M34%20190V510Q34%20600%2089.0%20654.0Q144%20708%20236%20708Q328%20708%20383.5%20654.0Q439%20600%20439%20510V190Q439%20100%20383.5%2046.0Q328%20-8%20236%20-8Q144%20-8%2089.0%2046.0Q34%20100%2034%20190ZM298%20184V516Q298%20548%20281.0%20567.5Q264%20587%20236%20587Q208%20587%20191.5%20567.5Q175%20548%20175%20516V184Q175%20152%20191.5%20132.5Q208%20113%20236%20113Q264%20113%20281.0%20132.5Q298%20152%20298%20184Z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="logo/marque-uso-180.png">
+<title>USO Cyclisme – Les sorties gravel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#2e6b4a; --green-deep:#235239; --black:#23282c; --lime:#a4cb3c; --navy:#1c3062;
+  --paper:#f2f4f1; --panel:#ffffff; --ink:#1b2620; --text:#2d3a34; --muted:#63706a; --line:#d8ded8;
+  --hiver:#46809f; --intersaison:#6f9a24; --ete:#d9822b;
+  --route-idle:#8a978f; --focus:#a4cb3c;
+  --commune-line:#c3cdc4; --commune-fill:#e7ebe5;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow","Helvetica Neue",Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#12180f; --panel:#18211c; --ink:#e9efe8; --text:#d3dcd5; --muted:#93a099; --line:#2b3730;
+  --green:#4f9a72; --lime:#b7d95a; --hiver:#6ba6c4; --intersaison:#96c142; --ete:#eda352;
+  --route-idle:#6f7d75; --commune-line:#333f37; --commune-fill:#1b241e;
+}}
+:root[data-theme="dark"]{
+  --paper:#12180f; --panel:#18211c; --ink:#e9efe8; --text:#d3dcd5; --muted:#93a099; --line:#2b3730;
+  --green:#4f9a72; --lime:#b7d95a; --hiver:#6ba6c4; --intersaison:#96c142; --ete:#eda352;
+  --route-idle:#6f7d75; --commune-line:#333f37; --commune-fill:#1b241e;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--text);font:400 16px/1.5 var(--body);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.masthead{background:var(--black);color:#fff;padding:20px 30px 0}
+.masthead-in{max-width:1320px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px}
+.mark{width:66px;height:66px;flex:none;align-self:center;border-radius:15px;box-shadow:0 0 0 1.5px rgba(255,255,255,.3)}
+.club-full{font:500 15px/1.3 var(--body);color:#c9d3cd;margin:0}
+.club-full b{display:block;font:700 30px/1 var(--display);color:#fff;letter-spacing:.01em}
+.sitenav{margin-left:auto;display:flex;gap:18px;align-items:center}
+.sitenav a{color:#c9d3cd;text-decoration:none;font:600 17px/1 var(--display);padding:6px 2px;border-bottom:2px solid transparent}
+.sitenav a:hover{color:#fff}
+.sitenav a[aria-current="page"]{color:#fff;border-bottom-color:var(--lime)}
+.stripe{height:13px;background:#fff;margin-top:16px}
+
+.band{background:var(--black);color:#fff}
+.band-in{max-width:1320px;margin:0 auto;padding:40px 30px 44px}
+.band h1{font:700 clamp(36px,5.4vw,60px)/1 var(--display);margin:0}
+.band p{max-width:58ch;margin:16px 0 0;color:#e2e9e4;font-size:18px}
+.wrap{max-width:1320px;margin:0 auto;padding:0 30px}
+section{padding:40px 0 0}
+h2{font:700 28px/1 var(--display);color:var(--ink);margin:0 0 8px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;align-items:start}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:20px 22px}
+.card h3{font:700 24px/1 var(--display);margin:0 0 8px;color:var(--ink)}
+.card p{margin:0 0 10px}
+.card ul{margin:0;padding-left:18px}
+.card li{margin-bottom:5px}
+.empty{border:1px dashed var(--green);background:color-mix(in srgb,var(--green) 7%,var(--panel));border-radius:5px;padding:22px}
+.empty h3{font:700 26px/1 var(--display);color:var(--ink);margin:0 0 8px}
+.empty p{margin:0 0 12px;max-width:60ch}
+.btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;border-radius:4px;padding:11px 18px;font:600 18px/1 var(--display)}
+.btn:hover{background:var(--green-deep)}
+footer{max-width:1320px;margin:0 auto;padding:36px 30px 40px;color:var(--muted);font-size:13.5px}
+footer a{color:var(--green)}
+@media (max-width:900px){
+  .masthead{padding:16px 18px 0}.mark{width:56px;height:56px}.club-full b{font-size:26px}
+  .sitenav{margin-left:0;flex-basis:100%;gap:16px}
+  .band-in{padding:30px 18px 34px}.wrap{padding:0 18px}.cols{grid-template-columns:1fr}
+  footer{padding:28px 18px 34px}
+}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-in">
+    <svg class="mark" aria-hidden="true" viewBox="0 0 100 100" role="img" aria-label="USO Cyclisme"><defs><clipPath id="uso-m"><rect width="100" height="100" rx="22"/></clipPath></defs><g clip-path="url(#uso-m)"><rect width="100" height="100" fill="#2E6B4A"/><rect y="72" width="100" height="28" fill="#23282C"/><g fill="#FFFFFF" transform="translate(16.5,56)"><path transform="translate(0.0,0) scale(0.048,-0.048)" d="M41 199V688Q41 693 44.5 696.5Q48 700 53 700H170Q175 700 178.5 696.5Q182 693 182 688V185Q182 153 198.0 133.0Q214 113 240 113Q266 113 281.5 133.0Q297 153 297 185V688Q297 693 300.5 696.5Q304 700 309 700H426Q431 700 434.5 696.5Q438 693 438 688V199Q438 105 383.5 48.5Q329 -8 240 -8Q150 -8 95.5 48.5Q41 105 41 199Z"/><path transform="translate(22.99,0) scale(0.048,-0.048)" d="M30 175V204Q30 209 33.5 212.5Q37 216 42 216H157Q162 216 165.5 212.5Q169 209 169 204V182Q169 151 185.0 132.0Q201 113 225 113Q249 113 265.0 131.0Q281 149 281 178Q281 208 261.0 229.5Q241 251 183 293Q133 329 102.0 357.0Q71 385 49.0 426.0Q27 467 27 521Q27 606 80.0 657.0Q133 708 220 708Q308 708 361.5 655.0Q415 602 415 516V492Q415 487 411.5 483.5Q408 480 403 480H288Q283 480 279.5 483.5Q276 487 276 492V519Q276 550 260.5 568.5Q245 587 220 587Q196 587 181.0 569.5Q166 552 166 521Q166 491 185.0 468.0Q204 445 260 404Q322 358 353.5 329.5Q385 301 402.5 266.5Q420 232 420 184Q420 96 366.0 44.0Q312 -8 224 -8Q166 -8 122.0 15.0Q78 38 54.0 79.5Q30 121 30 175Z"/><path transform="translate(44.3,0) scale(0.048,-0.048)" d="M34 190V510Q34 600 89.0 654.0Q144 708 236 708Q328 708 383.5 654.0Q439 600 439 510V190Q439 100 383.5 46.0Q328 -8 236 -8Q144 -8 89.0 46.0Q34 100 34 190ZM298 184V516Q298 548 281.0 567.5Q264 587 236 587Q208 587 191.5 567.5Q175 548 175 516V184Q175 152 191.5 132.5Q208 113 236 113Q264 113 281.0 132.5Q298 152 298 184Z"/></g></g></svg>
+    <p class="club-full"><b>USO Cyclisme</b>Union Sportive d’Ormesson-sur-Marne</p>
+    <nav class="sitenav" aria-label="Sections du site">
+      <a href="index.html" data-artifact="https://claude.ai/artifact/2yjYoys5P4a2rUuQ29G69Q">Accueil</a>
+      <a href="route.html" data-artifact="https://claude.ai/artifact/V5acsLuTPAGGAfbCnT7exV">Route</a>
+      <a href="gravel.html" aria-current="page">Gravel</a>
+    </nav>
+  </div>
+  <div class="stripe"></div>
+</header>
+<div class="band"><div class="band-in">
+  <h1>Les sorties gravel</h1>
+  <p>Départ du centre culturel Wladimir-d’Ormesson, 14 avenue Wladimir d’Ormesson, à Ormesson-sur-Marne. De là, on rejoint vite les chemins : forêt Notre-Dame, forêt d’Armainvilliers, plateau de la Brie, vallée de l’Yerres et berges de Marne.</p>
+</div></div>
+<main>
+<section class="wrap">
+  <div class="empty">
+    <h3>Les premiers parcours arrivent</h3>
+    <p>La bibliothèque gravel se remplira comme celle de la route : carte, profil et fichier GPX pour chaque sortie. En attendant, les rendez-vous de la semaine sont annoncés sur Instagram et sur le groupe Facebook.</p>
+    <a class="btn" href="https://www.instagram.com/usormessongravel" target="_blank" rel="noopener">Suivre les sorties sur Instagram</a>
+  </div>
+</section>
+<section class="wrap">
+  <h2>En attendant, l’essentiel</h2>
+  <div class="cols">
+    <div class="card">
+      <h3>Comment ça se passe</h3>
+      <ul>
+        <li>Rendez-vous devant le centre culturel d’Ormesson-sur-Marne, à 3 km de la gare du RER A La Varenne-Chennevières.</li>
+        <li>Le samedi matin, l’horaire est annoncé avec la sortie de la semaine.</li>
+        <li>On roule en groupe, personne n’est laissé seul. Des groupes de niveau se formeront selon le nombre d’adhérents.</li>
+        <li>Terrains : Val-de-Marne, Seine-et-Marne et Essonne.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Quel vélo, quel équipement</h3>
+      <ul>
+        <li>Un gravel, un VTT ou un vieux vélo de route en pneus larges : tout roule pour commencer.</li>
+        <li>Des pneus d’au moins 35 mm sont plus confortables sur les chemins de la Brie.</li>
+        <li>Casque, chambre à air de rechange, de quoi boire et manger.</li>
+        <li>Des lumières de novembre à février, les chemins sortent tard de la brume.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="wrap">
+  <h2>Ce qui se prépare</h2>
+  <div class="cols">
+    <div class="card">
+      <h3>Événements</h3>
+      <p>Des participations groupées à des événements gravel et route, et l’organisation du Paris Gravel Belt, qui existe déjà.</p>
+    </div>
+    <div class="card">
+      <h3>Bikepacking</h3>
+      <p>Un ou plusieurs séjours, sacoches sur le cadre, selon les envies du groupe.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer>Tu as des traces gravel à partager ? Envoie-les au club, elles rejoindront cette page avec leur carte et leur profil.</footer>
+<script>
+if(/claude/.test(location.hostname)) document.querySelectorAll('[data-artifact]').forEach(a=>{if(a.dataset.artifact) a.href=a.dataset.artifact});
+</script>
+</body>
+</html>
