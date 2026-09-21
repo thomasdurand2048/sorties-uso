@@ -68,7 +68,7 @@ h2{font:700 30px/1 var(--display);color:var(--ink);margin:0 0 6px}
 .disc{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:5px;overflow:hidden;text-decoration:none;color:inherit}
 .disc:hover{border-color:var(--green)}
 .disc-top{padding:18px 22px;color:#fff;background:var(--green)}
-.disc-top.dark{background:var(--black)}
+.disc-top.dark{background:linear-gradient(rgba(18,22,20,.35),rgba(18,22,20,.85)),url("medias/groupe-foret.jpg") center 40%/cover;text-shadow:0 1px 3px rgba(0,0,0,.5)}
 .disc-top h3{font:700 34px/1 var(--display);margin:0}
 .disc-top span{font-size:14.5px;color:#e6ece8}
 .disc-body{padding:18px 22px 20px;display:flex;flex-direction:column;gap:14px;flex:1}
@@ -96,6 +96,8 @@ h2{font:700 30px/1 var(--display);color:var(--ink);margin:0 0 6px}
 .social{display:flex;gap:12px;flex-wrap:wrap}
 .social a{display:inline-flex;align-items:center;gap:9px;text-decoration:none;color:var(--black);background:#fff;border-radius:4px;padding:11px 16px;font:600 18px/1 var(--display)}
 .social a:hover{background:var(--lime)}
+.social a.adh{background:var(--lime);color:var(--black)}
+.social a.adh:hover{background:#b6db52}
 .social svg{width:19px;height:19px;fill:currentColor}
 footer{max-width:1320px;margin:0 auto;padding:34px 30px 40px;color:var(--muted);font-size:13.5px}
 footer a{color:var(--green)}
@@ -124,6 +126,7 @@ footer a{color:var(--green)}
       <a href="index.html" aria-current="page">Accueil</a>
       <a href="route.html" data-artifact="https://claude.ai/artifact/V5acsLuTPAGGAfbCnT7exV">Route</a>
       <a href="gravel.html" data-artifact="https://claude.ai/artifact/YHeHjdAMbPRtPCx3Y7Q7BL">Gravel</a>
+      <a href="adherer.html" data-artifact="https://claude.ai/artifact/JsdJHLtQEaC5gGc8MooUPZ">Adhérer</a>
     </nav>
   </div>
   <div class="stripe"></div>
@@ -192,13 +195,14 @@ footer a{color:var(--green)}
   <div class="join">
     <p><strong>Venez nous rejoindre nombreux</strong> pour développer la pratique du vélo à Ormesson. Le plus simple est de venir rouler une première fois avec nous, samedi en gravel ou dimanche sur route, puis de prendre une licence à l’USO pour continuer.</p>
     <div class="social">
+      <a class="adh" href="adherer.html" data-artifact="https://claude.ai/artifact/JsdJHLtQEaC5gGc8MooUPZ">Adhérer au club</a>
       <a href="https://www.facebook.com/share/g/1GEjvjSbyL/?mibextid=wwXIfr" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>Groupe Facebook</a>
       <a href="https://www.instagram.com/usormessongravel" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4a3.9 3.9 0 0 1-1.4-.9 3.9 3.9 0 0 1-.9-1.4c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.2A6.6 6.6 0 1 0 18.6 12 6.6 6.6 0 0 0 12 5.4zm0 10.9A4.3 4.3 0 1 1 16.3 12 4.3 4.3 0 0 1 12 16.3zm6.9-11.1a1.5 1.5 0 1 1-1.5-1.5 1.5 1.5 0 0 1 1.5 1.5z"/></svg>Instagram gravel</a>
     </div>
   </div>
 </section>
 </main>
-<footer>US Ormesson-sur-Marne, section cyclisme. Les parcours route sont recalculés au départ du pont de Champigny ; distances et dénivelés peuvent différer de ce qu’annoncent Strava ou Garmin.</footer>
+<footer>US Ormesson-sur-Marne, section cyclisme. Les parcours route sont recalculés au départ du pont de Champigny ; distances et dénivelés peuvent différer de ce qu’annoncent Strava ou Garmin. Photo gravel : Arnaud et Christophe.</footer>
 <script>
 if(/claude/.test(location.hostname)) document.querySelectorAll('[data-artifact]').forEach(a=>{if(a.dataset.artifact) a.href=a.dataset.artifact});
 </script>
