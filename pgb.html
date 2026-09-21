@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22%20role=%22img%22%20aria-label=%22USO%20Cyclisme%22%3E%3Cdefs%3E%3CclipPath%20id=%22uso-c%22%3E%3Crect%20width=%22100%22%20height=%22100%22%20rx=%2222%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20clip-path=%22url(#uso-c)%22%3E%3Crect%20width=%22100%22%20height=%22100%22%20fill=%22#2E6B4A%22/%3E%3Crect%20y=%2272%22%20width=%22100%22%20height=%2228%22%20fill=%22#23282C%22/%3E%3Cg%20fill=%22#FFFFFF%22%20transform=%22translate(16.5,56)%22%3E%3Cpath%20transform=%22translate(0.0,0)%20scale(0.048,-0.048)%22%20d=%22M41%20199V688Q41%20693%2044.5%20696.5Q48%20700%2053%20700H170Q175%20700%20178.5%20696.5Q182%20693%20182%20688V185Q182%20153%20198.0%20133.0Q214%20113%20240%20113Q266%20113%20281.5%20133.0Q297%20153%20297%20185V688Q297%20693%20300.5%20696.5Q304%20700%20309%20700H426Q431%20700%20434.5%20696.5Q438%20693%20438%20688V199Q438%20105%20383.5%2048.5Q329%20-8%20240%20-8Q150%20-8%2095.5%2048.5Q41%20105%2041%20199Z%22/%3E%3Cpath%20transform=%22translate(22.99,0)%20scale(0.048,-0.048)%22%20d=%22M30%20175V204Q30%20209%2033.5%20212.5Q37%20216%2042%20216H157Q162%20216%20165.5%20212.5Q169%20209%20169%20204V182Q169%20151%20185.0%20132.0Q201%20113%20225%20113Q249%20113%20265.0%20131.0Q281%20149%20281%20178Q281%20208%20261.0%20229.5Q241%20251%20183%20293Q133%20329%20102.0%20357.0Q71%20385%2049.0%20426.0Q27%20467%2027%20521Q27%20606%2080.0%20657.0Q133%20708%20220%20708Q308%20708%20361.5%20655.0Q415%20602%20415%20516V492Q415%20487%20411.5%20483.5Q408%20480%20403%20480H288Q283%20480%20279.5%20483.5Q276%20487%20276%20492V519Q276%20550%20260.5%20568.5Q245%20587%20220%20587Q196%20587%20181.0%20569.5Q166%20552%20166%20521Q166%20491%20185.0%20468.0Q204%20445%20260%20404Q322%20358%20353.5%20329.5Q385%20301%20402.5%20266.5Q420%20232%20420%20184Q420%2096%20366.0%2044.0Q312%20-8%20224%20-8Q166%20-8%20122.0%2015.0Q78%2038%2054.0%2079.5Q30%20121%2030%20175Z%22/%3E%3Cpath%20transform=%22translate(44.3,0)%20scale(0.048,-0.048)%22%20d=%22M34%20190V510Q34%20600%2089.0%20654.0Q144%20708%20236%20708Q328%20708%20383.5%20654.0Q439%20600%20439%20510V190Q439%20100%20383.5%2046.0Q328%20-8%20236%20-8Q144%20-8%2089.0%2046.0Q34%20100%2034%20190ZM298%20184V516Q298%20548%20281.0%20567.5Q264%20587%20236%20587Q208%20587%20191.5%20567.5Q175%20548%20175%20516V184Q175%20152%20191.5%20132.5Q208%20113%20236%20113Q264%20113%20281.0%20132.5Q298%20152%20298%20184Z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="logo/marque-uso-180.png">
+<title>Paris Gravel Belt 2027 – USO Cyclisme</title>
+<meta name="description" content="Paris Gravel Belt 2027 : le tour de Paris en gravel par la ceinture verte, départ d'Ormesson-sur-Marne, en juin 2027. Nouveau : deux distances de 50/60 km et 100/120 km.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#2e6b4a; --green-deep:#235239; --black:#23282c; --lime:#a4cb3c; --navy:#1c3062;
+  --paper:#f2f4f1; --panel:#ffffff; --ink:#1b2620; --text:#2d3a34; --muted:#63706a; --line:#d8ded8;
+  --hiver:#46809f; --intersaison:#6f9a24; --ete:#d9822b;
+  --route-idle:#8a978f; --focus:#a4cb3c;
+  --commune-line:#c3cdc4; --commune-fill:#e7ebe5;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow","Helvetica Neue",Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#12180f; --panel:#18211c; --ink:#e9efe8; --text:#d3dcd5; --muted:#93a099; --line:#2b3730;
+  --green:#4f9a72; --lime:#b7d95a; --hiver:#6ba6c4; --intersaison:#96c142; --ete:#eda352;
+  --route-idle:#6f7d75; --commune-line:#333f37; --commune-fill:#1b241e;
+}}
+:root[data-theme="dark"]{
+  --paper:#12180f; --panel:#18211c; --ink:#e9efe8; --text:#d3dcd5; --muted:#93a099; --line:#2b3730;
+  --green:#4f9a72; --lime:#b7d95a; --hiver:#6ba6c4; --intersaison:#96c142; --ete:#eda352;
+  --route-idle:#6f7d75; --commune-line:#333f37; --commune-fill:#1b241e;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--text);font:400 16px/1.5 var(--body);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.masthead{background:var(--black);color:#fff;padding:20px 30px 0}
+.masthead-in{max-width:1320px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px}
+.mark{width:66px;height:66px;flex:none;align-self:center;border-radius:15px;box-shadow:0 0 0 1.5px rgba(255,255,255,.3)}
+.club-full{font:500 15px/1.3 var(--body);color:#c9d3cd;margin:0}
+.club-full b{display:block;font:700 30px/1 var(--display);color:#fff;letter-spacing:.01em}
+.sitenav{margin-left:auto;display:flex;gap:18px;align-items:center}
+.sitenav a{color:#c9d3cd;text-decoration:none;font:600 17px/1 var(--display);padding:6px 2px;border-bottom:2px solid transparent}
+.sitenav a:hover{color:#fff}
+.sitenav a[aria-current="page"]{color:#fff;border-bottom-color:var(--lime)}
+.stripe{height:13px;background:#fff;margin-top:16px}
+.brand{display:flex;align-items:center;gap:16px 20px;color:inherit;text-decoration:none;border-radius:6px}
+.brand:hover .club-full b{color:var(--lime)}
+
+.pgb-hero{background:var(--black);color:#fff;position:relative;overflow:hidden}
+.pgb-in{max-width:1320px;margin:0 auto;padding:44px 30px 48px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;position:relative}
+.kicker{font:600 18px/1 var(--display);color:var(--lime);margin:0 0 10px;letter-spacing:.03em}
+.pgb-hero h1{font:700 clamp(46px,7vw,88px)/0.92 var(--display);margin:0}
+.pgb-hero h1 span{color:var(--lime)}
+.pgb-hero p.lead{font-size:clamp(17px,2vw,20px);max-width:52ch;margin:18px 0 0;color:#e2e9e4}
+.keydates{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.keydates div{border:1.5px solid rgba(255,255,255,.35);border-radius:4px;padding:10px 14px}
+.keydates b{display:block;font:700 26px/1 var(--display);color:#fff}
+.keydates span{font-size:13.5px;color:#c9d3cd}
+.ring{width:100%;max-width:440px;justify-self:center;color:#fff}
+.wrap{max-width:1320px;margin:0 auto;padding:0 30px}
+section{padding:42px 0 0}
+h2{font:700 30px/1 var(--display);color:var(--ink);margin:0 0 8px}
+.sec-lead{margin:0 0 20px;color:var(--muted);max-width:64ch}
+
+.news{display:grid;grid-template-columns:auto 1fr;gap:22px 30px;align-items:center;background:var(--green);color:#fff;border-radius:6px;padding:26px 30px}
+.badge{width:150px;height:150px;flex:none}
+.news h2{color:#fff;font-size:34px;margin-bottom:10px}
+.news p{margin:0;font-size:18px;line-height:1.5;max-width:60ch;color:#eef3ef}
+.news p b{color:#fff}
+
+.dist{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.d{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:20px 22px 22px;position:relative}
+.d .new{position:absolute;top:14px;right:14px;background:var(--lime);color:var(--black);font:700 14px/1 var(--display);padding:5px 8px;border-radius:3px;letter-spacing:.03em}
+.d .km{font:700 54px/0.95 var(--display);color:var(--ink)}
+.d .km small{font-size:24px;margin-left:3px}
+.d h3{font:600 22px/1.1 var(--display);color:var(--green);margin:6px 0 8px}
+.d p{margin:0;font-size:15px}
+.d.big{border-top:5px solid var(--black)}
+.d.mid,.d.short{border-top:5px solid var(--lime)}
+
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:26px 40px;align-items:start}
+.about p{margin:0 0 14px;max-width:66ch}
+.rules{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.rules li{padding:10px 0 10px 16px;border-left:3px solid var(--lime);font-size:15.5px;background:var(--panel)}
+.rules b{display:block;color:var(--ink)}
+
+.cal{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cal div{background:var(--black);color:#fff;border-radius:6px;padding:22px 24px}
+.cal b{display:block;font:700 36px/1 var(--display);color:var(--lime);margin-bottom:6px}
+.cal span{color:#dfe7e2}
+.follow{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.follow a{display:inline-block;text-decoration:none;background:var(--green);color:#fff;border-radius:4px;padding:11px 18px;font:600 18px/1 var(--display)}
+.follow a:hover{background:var(--green-deep)}
+.history{margin-top:14px;color:var(--muted);font-size:14.5px}
+footer{max-width:1320px;margin:0 auto;padding:36px 30px 40px;color:var(--muted);font-size:13.5px}
+@media (max-width:900px){
+  .masthead{padding:16px 18px 0}.mark{width:56px;height:56px}.club-full b{font-size:26px}
+  .sitenav{margin-left:0;flex-basis:100%;gap:14px;flex-wrap:wrap}
+  .pgb-in{grid-template-columns:1fr;padding:32px 18px 36px}
+  .ring{max-width:280px}
+  .wrap{padding:0 18px}
+  .news{grid-template-columns:1fr;padding:22px}
+  .badge{width:120px;height:120px}
+  .dist,.about,.cal{grid-template-columns:1fr}
+  footer{padding:28px 18px 34px}
+}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-in">
+    <a class="brand" href="index.html" data-artifact="https://claude.ai/artifact/2yjYoys5P4a2rUuQ29G69Q" aria-label="USO Cyclisme, retour à l’accueil">
+      <svg class="mark" aria-hidden="true" viewBox="0 0 100 100" role="img" aria-label="USO Cyclisme"><defs><clipPath id="uso-m"><rect width="100" height="100" rx="22"/></clipPath></defs><g clip-path="url(#uso-m)"><rect width="100" height="100" fill="#2E6B4A"/><rect y="72" width="100" height="28" fill="#23282C"/><g fill="#FFFFFF" transform="translate(16.5,56)"><path transform="translate(0.0,0) scale(0.048,-0.048)" d="M41 199V688Q41 693 44.5 696.5Q48 700 53 700H170Q175 700 178.5 696.5Q182 693 182 688V185Q182 153 198.0 133.0Q214 113 240 113Q266 113 281.5 133.0Q297 153 297 185V688Q297 693 300.5 696.5Q304 700 309 700H426Q431 700 434.5 696.5Q438 693 438 688V199Q438 105 383.5 48.5Q329 -8 240 -8Q150 -8 95.5 48.5Q41 105 41 199Z"/><path transform="translate(22.99,0) scale(0.048,-0.048)" d="M30 175V204Q30 209 33.5 212.5Q37 216 42 216H157Q162 216 165.5 212.5Q169 209 169 204V182Q169 151 185.0 132.0Q201 113 225 113Q249 113 265.0 131.0Q281 149 281 178Q281 208 261.0 229.5Q241 251 183 293Q133 329 102.0 357.0Q71 385 49.0 426.0Q27 467 27 521Q27 606 80.0 657.0Q133 708 220 708Q308 708 361.5 655.0Q415 602 415 516V492Q415 487 411.5 483.5Q408 480 403 480H288Q283 480 279.5 483.5Q276 487 276 492V519Q276 550 260.5 568.5Q245 587 220 587Q196 587 181.0 569.5Q166 552 166 521Q166 491 185.0 468.0Q204 445 260 404Q322 358 353.5 329.5Q385 301 402.5 266.5Q420 232 420 184Q420 96 366.0 44.0Q312 -8 224 -8Q166 -8 122.0 15.0Q78 38 54.0 79.5Q30 121 30 175Z"/><path transform="translate(44.3,0) scale(0.048,-0.048)" d="M34 190V510Q34 600 89.0 654.0Q144 708 236 708Q328 708 383.5 654.0Q439 600 439 510V190Q439 100 383.5 46.0Q328 -8 236 -8Q144 -8 89.0 46.0Q34 100 34 190ZM298 184V516Q298 548 281.0 567.5Q264 587 236 587Q208 587 191.5 567.5Q175 548 175 516V184Q175 152 191.5 132.5Q208 113 236 113Q264 113 281.0 132.5Q298 152 298 184Z"/></g></g></svg>
+      <p class="club-full"><b>USO Cyclisme</b>Union Sportive d’Ormesson-sur-Marne</p>
+    </a>
+    <nav class="sitenav" aria-label="Sections du site">
+      <a href="index.html" data-artifact="https://claude.ai/artifact/2yjYoys5P4a2rUuQ29G69Q">Accueil</a>
+      <a href="route.html" data-artifact="https://claude.ai/artifact/V5acsLuTPAGGAfbCnT7exV">Route</a>
+      <a href="gravel.html" data-artifact="https://claude.ai/artifact/YHeHjdAMbPRtPCx3Y7Q7BL">Gravel</a>
+      <a href="adherer.html" data-artifact="https://claude.ai/artifact/JsdJHLtQEaC5gGc8MooUPZ">Adhérer</a>
+      <a href="pgb.html" aria-current="page">Paris Gravel Belt</a>
+    </nav>
+  </div>
+  <div class="stripe"></div>
+</header>
+<div class="pgb-hero">
+  <div class="pgb-in">
+    <div>
+      <p class="kicker">L’événement gravel de l’USO</p>
+      <h1>Paris Gravel Belt <span>2027</span></h1>
+      <p class="lead">Le tour de Paris en gravel par la ceinture verte. Chemins, forêts et curiosités de l’Île-de-France, loin des voitures, au départ et à l’arrivée d’Ormesson-sur-Marne.</p>
+      <div class="keydates">
+        <div><b>Juin 2027</b><span>date de l’épreuve</span></div>
+        <div><b>1er trimestre 2027</b><span>ouverture des inscriptions</span></div>
+      </div>
+    </div>
+    <svg class="ring" viewBox="0 0 400 400" role="img" aria-label="Schéma : une boucle autour de Paris, départ et arrivée à Ormesson-sur-Marne">
+      <path d="M200 52 C268 50 330 92 346 150 C362 206 352 262 318 300 C282 342 232 356 186 350 C132 344 86 316 62 268 C40 222 44 164 72 122 C102 76 150 54 200 52Z" fill="none" stroke="#3c7a58" stroke-width="22" stroke-linejoin="round"/>
+      <path d="M200 52 C268 50 330 92 346 150 C362 206 352 262 318 300 C282 342 232 356 186 350 C132 344 86 316 62 268 C40 222 44 164 72 122 C102 76 150 54 200 52Z" fill="none" stroke="#a4cb3c" stroke-width="3" stroke-dasharray="10 9"/>
+      <circle cx="200" cy="205" r="30" fill="#fff" opacity=".1"/>
+      <circle cx="200" cy="205" r="7" fill="#fff"/>
+      <text x="200" y="245" text-anchor="middle" fill="#dfe7e2" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="600" font-size="24">Paris</text>
+      <circle cx="328" cy="286" r="12" fill="#a4cb3c" stroke="#23282c" stroke-width="4"/>
+      <text x="306" y="330" text-anchor="end" fill="#fff" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="22">Ormesson</text>
+      <text x="306" y="352" text-anchor="end" fill="#c9d3cd" font-family="Barlow, Arial, sans-serif" font-size="14">départ et arrivée</text>
+    </svg>
+  </div>
+</div>
+<main>
+<section class="wrap">
+  <div class="news">
+    <svg class="badge" viewBox="0 0 160 160" role="img" aria-label="Nouveauté 2027">
+      <path d="M80 4 L93 17 L111 12 L117 30 L135 34 L134 52 L150 62 L142 79 L152 95 L137 106 L138 124 L120 127 L113 144 L96 139 L82 152 L68 140 L50 145 L44 128 L26 124 L28 106 L12 96 L22 80 L13 63 L29 53 L28 35 L46 31 L52 14 L70 19Z" fill="#a4cb3c"/>
+      <circle cx="80" cy="80" r="52" fill="none" stroke="#23282c" stroke-width="2.5" stroke-dasharray="4 4"/>
+      <text x="80" y="72" text-anchor="middle" fill="#23282c" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="20" textLength="86" lengthAdjust="spacingAndGlyphs">NOUVEAUTÉ</text>
+      <text x="80" y="108" text-anchor="middle" fill="#23282c" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="38" textLength="80" lengthAdjust="spacingAndGlyphs">2027</text>
+    </svg>
+    <div>
+      <h2>Trois distances en 2027</h2>
+      <p>Pour la Paris Gravel Belt 2027, du nouveau avec <b>deux nouvelles distances</b> en plus du tour de Paris. Une trace de <b>50/60 km</b> et une autre de <b>100/120 km</b> seront proposées.</p>
+    </div>
+  </div>
+</section>
+<section class="wrap">
+  <h2>Choisir sa distance</h2>
+  <p class="sec-lead">Le grand tour pour les rouleurs d’endurance, et deux formats plus courts pour découvrir l’événement.</p>
+  <div class="dist">
+    <div class="d big"><div class="km">~230<small>km</small></div><h3>Le tour de Paris</h3><p>La boucle historique par la grande ceinture verte, en une journée : environ 2 000 m de dénivelé et 60 à 70 % de chemins.</p></div>
+    <div class="d mid"><span class="new">NOUVEAU</span><div class="km">100/120<small>km</small></div><h3>Nouvelle distance intermédiaire</h3><p>Une trace de 100 à 120 km, pour une grosse matinée de gravel sur les chemins de l’épreuve.</p></div>
+    <div class="d short"><span class="new">NOUVEAU</span><div class="km">50/60<small>km</small></div><h3>Nouvelle distance courte</h3><p>Une trace de 50 à 60 km, idéale pour une première expérience de gravel sur un événement.</p></div>
+  </div>
+</section>
+<section class="wrap">
+  <h2>L’épreuve</h2>
+  <div class="about">
+    <div>
+      <p>La Paris Gravel Belt fait le tour de Paris par la grande ceinture verte, avec un départ et une arrivée à Ormesson-sur-Marne. Chemins, forêts et autres curiosités jalonnent un parcours qui s’éloigne de l’agitation de la capitale.</p>
+      <p>Sur le grand tour, compte environ 225 à 250 km selon les éditions, 2 000 à 2 300 m de dénivelé positif et 60 à 70 % de chemins. C’est un parcours exigeant et varié, qui alterne portions roulantes, chemins gravel et passages plus techniques.</p>
+      <p>C’est une randonnée, pas une course : aucun classement, chacun avance à son rythme et profite du parcours.</p>
+    </div>
+    <ul class="rules">
+      <li><b>Une journée, en autonomie</b>Le grand tour se boucle en une journée, en autonomie complète : chacun gère son ravitaillement et ses arrêts.</li>
+      <li><b>Trace GPX fournie</b>La navigation se fait à la trace, avec un suivi en direct qui permet aussi de rejoindre un tronçon pour rouler ensemble.</li>
+      <li><b>Départ matinal</b>Sur les éditions précédentes, le départ était donné entre 6 h 30 et 7 h.</li>
+    </ul>
+  </div>
+</section>
+<section class="wrap">
+  <h2>Rendez-vous en juin 2027</h2>
+  <div class="cal">
+    <div><b>Juin 2027</b><span>Rendez-vous à Ormesson-sur-Marne pour profiter de l’événement. La date précise sera annoncée avec l’ouverture des inscriptions.</span></div>
+    <div><b>1er trimestre 2027</b><span>Ouverture des inscriptions, pour les trois distances.</span></div>
+  </div>
+  <div class="follow">
+    <a href="https://www.instagram.com/usormessongravel" target="_blank" rel="noopener">Suivre l’annonce sur Instagram</a>
+    <a href="https://www.facebook.com/share/g/1GEjvjSbyL/?mibextid=wwXIfr" target="_blank" rel="noopener">Groupe Facebook</a>
+  </div>
+  <p class="history">Éditions précédentes : 28 juin 2025 et 13 juin 2026.</p>
+</section>
+</main>
+<footer>Les distances, le dénivelé et les horaires de 2027 seront confirmés à l’ouverture des inscriptions.</footer>
+<script>
+if(/claude/.test(location.hostname)) document.querySelectorAll('[data-artifact]').forEach(a=>{if(a.dataset.artifact) a.href=a.dataset.artifact});
+</script>
+</body>
+</html>
