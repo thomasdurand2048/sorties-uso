@@ -115,6 +115,7 @@ h2{font:700 30px/1 var(--display);color:var(--ink);margin:0 0 8px}
 .steps li::before{content:counter(s);display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--black);color:#fff;font:700 18px/1 var(--display);margin-bottom:10px}
 .steps b{display:block;font:600 20px/1.1 var(--display);color:var(--ink);margin-bottom:4px}
 .steps p{margin:0;font-size:15px}
+.steps a{color:var(--green);font-weight:600;word-break:break-word}
 
 /* bureau */
 .board{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -128,7 +129,10 @@ h2{font:700 30px/1 var(--display);color:var(--ink);margin:0 0 8px}
 .member-body{padding:14px 18px 18px}
 .role{font:600 15px/1 var(--display);color:var(--green);letter-spacing:.03em}
 .member h3{font:700 24px/1.1 var(--display);color:var(--ink);margin:6px 0 6px}
-.member a{color:var(--green);font-weight:600;word-break:break-all}
+.member a{color:var(--green);font-weight:600;word-break:break-all;text-decoration:none}
+.member a:hover{text-decoration:underline}
+.contact{margin:0;display:grid;gap:3px;font-size:15px}
+.portrait .initials{letter-spacing:.02em}
 .member .soon{color:var(--muted);font-size:14.5px}
 footer{max-width:1320px;margin:0 auto;padding:36px 30px 40px;color:var(--muted);font-size:13.5px}
 footer a{color:var(--green)}
@@ -209,7 +213,7 @@ footer a{color:var(--green)}
   <h2>Comment adhérer</h2>
   <ol class="steps">
     <li><b>Viens rouler</b><p>Une ou deux sorties d’essai, le samedi en gravel ou le dimanche sur route.</p></li>
-    <li><b>Contacte le bureau</b><p>Par e-mail ou directement lors d’une sortie, pour recevoir le dossier d’adhésion.</p></li>
+    <li><b>Contacte le bureau</b><p>Par e-mail à <a href="mailto:uso.cyclo.ormesson@gmail.com">uso.cyclo.ormesson@gmail.com</a>, ou directement lors d’une sortie, pour recevoir le dossier d’adhésion.</p></li>
     <li><b>Règle l’adhésion</b><p>125 € pour la saison : cotisation au club et licence UFOLEP, que le club enregistre pour toi.</p></li>
     <li><b>Reçois ta tenue</b><p>Et roule aux couleurs de l’USO dès la sortie suivante.</p></li>
   </ol>
@@ -218,12 +222,12 @@ footer a{color:var(--green)}
   <h2>Le bureau</h2>
   <p class="sec-lead">Les trois personnes à contacter pour toute question sur le club et l’adhésion.</p>
   <div class="board">
-    <article class="member"><div class="portrait"><span class="initials">P</span></div>
-      <div class="member-body"><span class="role">Président</span><h3>Nom à venir</h3><p class="soon">Coordonnées bientôt en ligne</p></div></article>
-    <article class="member"><div class="portrait"><span class="initials">T</span></div>
-      <div class="member-body"><span class="role">Trésorier</span><h3>Nom à venir</h3><p class="soon">Coordonnées bientôt en ligne</p></div></article>
-    <article class="member"><div class="portrait"><span class="initials">S</span></div>
-      <div class="member-body"><span class="role">Secrétaire</span><h3>Nom à venir</h3><p class="soon">Coordonnées bientôt en ligne</p></div></article>
+    <article class="member"><div class="portrait"><span class="initials">CA</span></div>
+      <div class="member-body"><span class="role">Président</span><h3>Christophe Arnoult</h3><p class="contact"><span><a href="mailto:uso.cyclo.ormesson@gmail.com">Contacter</a></span><span><a href="tel:+33626344010">06 26 34 40 10</a></span></p></div></article>
+    <article class="member"><div class="portrait"><span class="initials">BD</span></div>
+      <div class="member-body"><span class="role">Trésorier</span><h3>Benoit Delmere</h3><p class="contact"><span><a href="mailto:uso.cyclo.ormesson@gmail.com">Contacter</a></span></p></div></article>
+    <article class="member"><div class="portrait"><span class="initials">JD</span></div>
+      <div class="member-body"><span class="role">Secrétaire</span><h3>Jean-François Deschatres</h3><p class="contact"><span><a href="mailto:uso.cyclo.ormesson@gmail.com">Contacter</a></span></p></div></article>
   </div>
 </section>
 </main>
