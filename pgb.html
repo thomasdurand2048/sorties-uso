@@ -79,7 +79,10 @@ button{font:inherit;color:inherit}
 .keydates div{border:1.5px solid rgba(255,255,255,.35);border-radius:4px;padding:10px 14px}
 .keydates b{display:block;font:700 26px/1 var(--display);color:#fff}
 .keydates span{font-size:13.5px;color:#c9d3cd}
-.ring{width:100%;max-width:440px;justify-self:center;color:#fff}
+.pgb-logo{width:100%;max-width:400px;justify-self:center;display:block;filter:drop-shadow(0 6px 24px rgba(0,0,0,.45))}
+.pgb-photo{margin:0;position:relative}
+.pgb-photo img{display:block;width:100%;height:clamp(240px,40vw,460px);object-fit:cover;object-position:center 62%}
+.pgb-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 30px 10px;background:linear-gradient(transparent,rgba(20,24,22,.75));color:#dfe7e2;font-size:13.5px}
 .wrap{max-width:1320px;margin:0 auto;padding:0 30px}
 section{padding:42px 0 0}
 h2{font:700 30px/1 var(--display);color:var(--ink);margin:0 0 8px}
@@ -120,7 +123,7 @@ footer{max-width:1320px;margin:0 auto;padding:36px 30px 40px;color:var(--muted);
   .masthead{padding:16px 18px 0}.mark{width:56px;height:56px}.club-full b{font-size:26px}
   .sitenav{margin-left:0;flex-basis:100%;gap:14px;flex-wrap:wrap}
   .pgb-in{grid-template-columns:1fr;padding:32px 18px 36px}
-  .ring{max-width:280px}
+  .pgb-logo{max-width:240px}
   .wrap{padding:0 18px}
   .news{grid-template-columns:1fr;padding:22px}
   .badge{width:120px;height:120px}
@@ -157,18 +160,10 @@ footer{max-width:1320px;margin:0 auto;padding:36px 30px 40px;color:var(--muted);
         <div><b>1er trimestre 2027</b><span>ouverture des inscriptions</span></div>
       </div>
     </div>
-    <svg class="ring" viewBox="0 0 400 400" role="img" aria-label="Schéma : une boucle autour de Paris, départ et arrivée à Ormesson-sur-Marne">
-      <path d="M200 52 C268 50 330 92 346 150 C362 206 352 262 318 300 C282 342 232 356 186 350 C132 344 86 316 62 268 C40 222 44 164 72 122 C102 76 150 54 200 52Z" fill="none" stroke="#3c7a58" stroke-width="22" stroke-linejoin="round"/>
-      <path d="M200 52 C268 50 330 92 346 150 C362 206 352 262 318 300 C282 342 232 356 186 350 C132 344 86 316 62 268 C40 222 44 164 72 122 C102 76 150 54 200 52Z" fill="none" stroke="#a4cb3c" stroke-width="3" stroke-dasharray="10 9"/>
-      <circle cx="200" cy="205" r="30" fill="#fff" opacity=".1"/>
-      <circle cx="200" cy="205" r="7" fill="#fff"/>
-      <text x="200" y="245" text-anchor="middle" fill="#dfe7e2" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="600" font-size="24">Paris</text>
-      <circle cx="328" cy="286" r="12" fill="#a4cb3c" stroke="#23282c" stroke-width="4"/>
-      <text x="306" y="330" text-anchor="end" fill="#fff" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="22">Ormesson</text>
-      <text x="306" y="352" text-anchor="end" fill="#c9d3cd" font-family="Barlow, Arial, sans-serif" font-size="14">départ et arrivée</text>
-    </svg>
+    <img class="pgb-logo" src="medias/pgb-logo.png" alt="Logo de la Paris Gravel Belt : le tour de Paris par la ceinture verte, organisé par l’USO">
   </div>
 </div>
+<figure class="pgb-photo"><img src="medias/pgb-illustration.jpg" alt="Groupe de cyclistes sur un chemin gravel, Paris et la tour Eiffel à l’horizon"><figcaption>Illustration générée par IA. Les chemins de la ceinture verte, avec Paris en ligne de mire.</figcaption></figure>
 <main>
 <section class="wrap">
   <div class="news">
